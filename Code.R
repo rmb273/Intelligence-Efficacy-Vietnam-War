@@ -44,7 +44,7 @@ keepOnlyWords <- content_transformer(function(x, words) {
              , invert = T) <- " "
   x
 })
-keep <- c("possible", "is conceivable", "perhaps", "almost"+"certain", "virtually certain", "all but certain", "highly probable", "highly likely", "odds overwhelming", "chances overwhelming", "probable", "likely", "we believe", "we estimate", "chances about even", "chances a little better than even", "chances a little worse than even", "improbable", "highly unlikely", "unlikely", "we believe that", "we estimate that", "we expect that", "we doubt", "almost certainly not", "virtually impossible", "almost impossible", "some slight chance", "do not indicate", "there are signs", "is not unlikely", "most likely", "almost certainly", "the possibility exists", "undoubtedly", "is expected to be", "might", "probably will not", "probably is not", "is doubtful", "highly"+"doubtful", "is obviously", "could", "may", "50-50", "probably not")
+keep <- c("certain", "certainly", "undoubtedly", "doubtless", "doubtlessly", "probable", "probably", "likely", "perhaps", "uncertain", "maybe", "could", "reportedly", "possible", "possibly", "conceivable", "unlikely", "improbable", "doubtful", "impossible", "inconceivable", "unimaginable", "unbelievable", "unthinkable")
 corpus <- tm_map(corpus, keepOnlyWords, keep)
 corpus <- tm_map(corpus, stripWhitespace)
 
