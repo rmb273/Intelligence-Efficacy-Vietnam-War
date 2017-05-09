@@ -1,4 +1,4 @@
-# R Script for DTF and TFIDF Analyses with Words of Estimative Probability
+# R Script for Performing Granger Tests on Datasheet
 
 # CLEAN SLATE
 # Specify working directory 
@@ -14,7 +14,6 @@ cat("\014")
 #install.packages("lmtest") # Uncomment this line if you do not have this library installed
 library(lmtest)
 
-# Exercise 2: Does pollution cause the stock market to dip?
 # Load data
 df<-read.csv("data.csv", header = TRUE)
 # Use column names as headers
